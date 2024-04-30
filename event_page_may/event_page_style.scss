@@ -1,0 +1,101 @@
+// basic --------------------------------------------
+
+*{margin: 0; padding: 0;  box-sizing: border-box; list-style: none; 
+}
+*{scroll-behavior: smooth;}
+// *a{color:#444444; text-decoration: none; cursor: pointer;}
+// *{font-family:'Sawarabi Gothic','M PLUS 1',sans-serif;}
+
+// basic --------------------------------------------
+
+
+// var --------------------------------------------
+$width-root:100vw;
+$height-root:100vh;
+$col-black:black;
+$col-white:white;
+$col-bright-gray:#ebebeb;
+$col-gray:#D9D9D9;
+$col-mid-gray :#BDBCBC;
+$col-dark-gray:#838383;
+$col-bg:#E9EDF0;
+$col-mid-black:#6C6E70; 
+$col-1:#FAFAFA;
+$col-2: #c2c2c2;
+$col-3: #444444;
+$col-4: #2A3BD9;
+$col-5: #FF0000;
+$col-6: #D3568A;
+$col-7: #B8648E;
+$col-8: #EBEBEB;
+$per-100:100%;
+$solid-black:1px solid black;
+$solid-gray:1px solid #888;
+$solid-red:1px solid #613c3c;
+$solid-pink:1px solid #FFAE9B;
+$solid-blue:1px solid #4f508b;
+$dotted-color:1px dotted #3b3e49;
+$dotted-pink:1px dotted #FFAE9B;
+// var --------------------------------------------
+
+
+//  mixin ------------------------------------------
+@mixin posi($posi, $top:0, $left:0, $zindx:100) {
+  position: $posi;
+  top: $top;
+  left: $left;
+  z-index: $zindx;
+}
+
+@mixin flex($jus, $ali, $flexdirection : row) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-direction: $flexdirection;
+}
+
+@mixin root {
+  width: var.$width-root;
+  height: var.$height-root;
+}  
+
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin box-style($w, $h, $col, $radius : 0) {
+  width: $w;
+  height: $h;
+  background-color: $col;
+  border-radius: $radius;
+}
+
+
+@mixin font($rem, $weight, $col) {
+  font-size: $rem ;
+  font-weight: $weight;
+  color: $col;
+}
+
+@mixin menu-style($col, $opacity, $mode:horizontal-tb, $orientation:unset) {
+  padding-top: 2vh;
+  writing-mode: $mode;
+  text-orientation: $orientation;
+  position: fixed;
+  background-color: $col;
+  opacity: $opacity;
+  border-radius: 30px 0 0 30px;
+}
+
+@mixin container-style($w, $h, $jus, $ali, $flexdirection : row) {
+  width: $w;
+  height: $h;
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-direction: $flexdirection;
+}
+
+//  mixin ------------------------------------------
