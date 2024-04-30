@@ -1,4 +1,7 @@
 // basic --------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
 
 *{margin: 0; padding: 0;  box-sizing: border-box; list-style: none; 
 }
@@ -100,8 +103,95 @@ $dotted-pink:1px dotted #FFAE9B;
 
 //  mixin ------------------------------------------
 
+#root{
+  @include container-style(100vw, 28910px, center, center, column);
+}
 
+.main{
+  @include container-style(1000px, 1600px, center, center, column);
+  border: solid 2px darkcyan;
+  margin-bottom: 40px;
+  background-image: url(./img/main_bg.jpg);
+  font-family: "Noto Serif KR";
 
+  &>div:first-child{
+    @include container-style(880px,160px, flex-start, center );
+    flex-shrink: 0;
+    @include font(52px, 250, #fff);
+  }
+
+  &>div:last-child{
+    @include container-style(880px,360px, center, center,column );
+    
+    &>p:nth-child(1){
+      @include container-style(100%,120px, flex-start, center );
+      @include font(80px, 700, #fff);
+    }
+    
+    &>p:nth-child(2){
+      @include container-style(100%,60%, flex-start, center );
+      @include font(96px, 700, #fff);
+    }
+  }
+}
+
+.outline{
+  @include container-style(1000px, 2000px, center, center, column);
+  border: solid 2px salmon;
+  margin-bottom: 40px;
+}
+
+.test_point{
+  @include container-style(1000px, 600px, center, center, column);
+  border: solid 2px saddlebrown;
+  margin-bottom: 40px;
+}
+
+.point_effect{
+  @include container-style(1000px, 1600px, center, center, column);
+  border: solid 2px cornflowerblue;
+  margin-bottom: 40px;
+}
+
+.point1{
+  @include container-style(1000px, 9050px, center, center, column);
+  border: solid 2px burlywood;
+  margin-bottom: 80px;
+}
+
+.point2{
+  @include container-style(1000px, 3240px, center, center, column);
+  border: solid 2px lawngreen;
+  margin-bottom: 40px;
+}
+
+.point3{
+  @include container-style(1000px, 3600px, center, center, column);
+  border: solid 2px palegreen;
+  margin-bottom: 40px;
+}
+
+.special{
+  @include container-style(1000px, 1420px, center, center, column);
+  border: solid 2px palevioletred;
+}
+
+.refresh_part{
+  @include container-style(1000px, 1360px, center, center, column);
+  border: solid 2px plum;
+  margin-bottom: 60px;
+}
+
+.notice{
+  @include container-style(1000px, 1400px, center, center, column);
+  border: solid 2px peru;
+  margin-bottom: 60px;
+}
+
+.recommend{
+  @include container-style(1000px, 2600px, center, center, column);
+  border: solid 2px orange;
+}
 
 
 
