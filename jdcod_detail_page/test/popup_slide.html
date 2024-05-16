@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+<div id="root">
+  <!-- <div class="silde_box">
+    <div class="slide_contents">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/5229bdefcfa8d.jpg" alt="">
+      </a>
+    </div>
+    <div class="slide_contents">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/d8a319a75d9a8.jpg" alt="">
+      </a>
+    </div>
+    <div class="slide_contents1">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/953540578dfdc.jpg" alt="">
+      </a>
+    </div>
+    <div class="slide_contents1">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/d68ffc1d2a17b.jpg" alt="">
+      </a>
+    </div>
+  </div> -->
+
+  <div id="slide_popup" class="silde_box">
+    <div class="slide-item">
+      <a href="" >
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/5229bdefcfa8d.jpg" >
+      </a>
+    </div>
+    <div class="slide-item">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/d8a319a75d9a8.jpg">
+      </a>
+    </div>
+    <div class="slide-item">
+      <a href="">
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/953540578dfdc.jpg" >
+      </a>
+    </div>
+    <div class="slide-item">
+      <a href="" >
+        <img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/d68ffc1d2a17b.jpg" >
+      </a>
+    </div>
+  
+  </div>
+  <div id="left-arrow"><img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/3dfd6bab85f33.png"></div>
+  <div id="right-arrow"><img src="https://cdn.imweb.me/upload/S20240130b5528bd22789f/a8fa057efe9bb.png" ></div>
+</div>
+
+<script>
+      $(function(){
+      $('#slide_popup').slick({
+      infinite : true,     
+      slidesToShow : 1,  
+      slidesToScroll : 1,        
+      speed : 2000,     
+      dots : true,        
+      autoplay : true,  
+      pauseOnHover : true,     
+      dotsClass : "slick-dots",
+      prevArrow : $('#left-arrow'), 
+      nextArrow : $('#right-arrow'), 
+      });
+    });
+
+</script>
+
+
+</body>
+</html>
