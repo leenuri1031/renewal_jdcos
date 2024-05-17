@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#root {
+  width: 1240px;
+  height: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:first-child {
+  width: 1250px;
+  height: 1240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://cdn.imweb.me/upload/S20240130b5528bd22789f/8fc6da58753d9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#root .coupon > div:nth-child(1) {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#root .coupon > div:nth-child(1) > div:nth-child(1) {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root .coupon > div:nth-child(1) > div:nth-child(2) {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-top: dashed #CC5D7D 3px;
+  border-bottom: dashed #CC5D7D 3px;
+}
+#root .coupon > div:nth-child(1) > div:nth-child(3) {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#root .coupon > div:nth-child(1) > div:nth-child(3) > div:first-child {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "S-CoreDream-3Light";
+  font-size: 52px;
+  font-weight: 600;
+  color: #454545;
+}
+#root .coupon > div:nth-child(1) > div:nth-child(3) > div:last-child {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "S-CoreDream-3Light";
+  font-size: 32px;
+  font-weight: 500;
+  color: #454545;
+  line-height: 1.5;
+}
+#root .coupon > div:nth-child(2) {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root .coupon > div:nth-child(2) > p {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "S-CoreDream-3Light";
+  font-size: 40px;
+  font-weight: 560;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (min-width: 700px) {
+  #root {
+    width: 480px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  #root > div:first-child {
+    width: 450px;
+    height: 480px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > div:first-child > div:nth-child(1) {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(1) {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(1) > img {
+    width: 100%;
+    height: auto;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(2) {
+    width: 90%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: dashed #CC5D7D 1.5px;
+    border-bottom: dashed #CC5D7D 1.5px;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(2) > img {
+    width: 100%;
+    height: auto;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(3) {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(3) > div:first-child {
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "S-CoreDream-3Light";
+    font-size: 22px;
+    font-weight: 600;
+    color: #454545;
+  }
+  #root > div:first-child > div:nth-child(1) > div:nth-child(3) > div:last-child {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "S-CoreDream-3Light";
+    font-size: 14px;
+    font-weight: 500;
+    color: #454545;
+    line-height: 1.2;
+  }
+  #root > div:first-child > div:nth-child(2) {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  #root > div:first-child > div:nth-child(2) > p {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "S-CoreDream-3Light";
+    font-size: 16px;
+    font-weight: 560;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8;
+  }
+}/*# sourceMappingURL=style.css.map */
