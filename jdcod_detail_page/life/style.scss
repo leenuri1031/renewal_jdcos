@@ -1,0 +1,13 @@
+@use './var'as var;
+@use './mixin' as mixin;
+
+// -------------------------------------------
+
+#root{
+  // width: 1000px;
+  @include mixin.flex(center,center,column);
+
+  // &>img{
+  //   @include mixin.size(1000px, auto);
+  // }
+}
