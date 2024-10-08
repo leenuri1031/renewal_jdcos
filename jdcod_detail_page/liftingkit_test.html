@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* PC TOP 버튼 */
+    #scrollTopPc {
+        display: none;
+        position: fixed;
+        bottom: 80px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+        cursor: pointer;
+        z-index: 99;
+    }
+    /* 모바일 TOP 버튼 */
+    #scrollTopMob {
+        display: none;
+        position: fixed;
+        bottom: 64px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+        z-index: 99;
+    }  
+    /* PC DOWN 버튼 */
+    #scrollDownPc {
+        display: none;
+        position: fixed;
+        bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+        cursor: pointer;
+        z-index: 99;
+    }
+    
+    /* 모바일 DOWN 버튼 */
+    #scrollDownMob {
+        display: none;
+        position: fixed;
+        bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+        z-index: 99;
+    }  
+    </style>
+    
+</head>
+<body>
+ 
+    <!-- PC TOP 버튼 HTML -->
+    <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
+        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/da849030d6262.png" width="40px" height="40px">
+    </div> 
+    <!-- 모바일 TOP 버튼 HTML -->
+    <div onclick="topFunctionMob()" id="scrollTopMob" class="hidden-lg">
+        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/da849030d6262.png" width="20px" height="20px">
+    </div>
+    <!-- PC DOWN 버튼 HTML -->
+    <div onclick="downFunction()" id="scrollDownPc" class="hidden-md hidden-sm hidden-xs">
+        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/ed66289d71e31.png" width="40px" height="40px">
+    </div> 
+    <!-- 모바일 DOWN 버튼 HTML -->
+    <div onclick="downFunctionMob()" id="scrollDownMob" class="hidden-lg">
+        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/ed66289d71e31.png" width="20px" height="20px">
+    </div>
+    
+    <!-- 상단/하단 이동 스크롤 스크립트 -->
+    <script>
+    window.onscroll = function() { scrollFunction() };
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("scrollTopPc").style.display = "block";
+            document.getElementById("scrollTopMob").style.display = "block";
+            document.getElementById("scrollDownPc").style.display = "block";
+            document.getElementById("scrollDownMob").style.display = "block";
+        } else {
+            document.getElementById("scrollTopPc").style.display = "none";
+            document.getElementById("scrollTopMob").style.display = "none";
+            document.getElementById("scrollDownPc").style.display = "none";
+            document.getElementById("scrollDownMob").style.display = "none";
+        }
+    }
+    
+    // PC TOP 버튼 동작
+    function topFunction() {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    }
+    // 모바일 TOP 버튼 동작
+    function topFunctionMob() {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    }
+    // PC DOWN 버튼 동작
+    function downFunction() {
+        $('html, body').animate({ scrollTop: $('#doz_footer').offset().top }, 500);
+    }
+    // 모바일 DOWN 버튼 동작
+    function downFunctionMob() {
+        $('html, body').animate({ scrollTop: $('#doz_footer').offset().top }, 500);
+    }
+    </script>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <img style="margin-top: 0; margin-bottom: 0; max-width: 1000px;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/fdec2d3aa7212.gif" class="fr-dib"> <br><br><br><br>
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c15b630f7a594.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/a808cb01a4b99.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/f87d3b236cbb9.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/549c799aa6051.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0; max-width: 1000px;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/879fed80462be.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/f4430a723eb26.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/5842990685f61.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c0c559ab95a73.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/91867ea200e02.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/e9e9197b90d4f.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/18b0570e90391.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/51c35947d2d48.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c90bee185dbd6.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/aec280f40d3fe.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/2351c1fdd67b8.jpg" class="fr-dib"> 
+  </div>
+</body>
+</html>
