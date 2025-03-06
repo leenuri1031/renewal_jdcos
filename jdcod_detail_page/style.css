@@ -1,0 +1,123 @@
+@import url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff");
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#txt_box {
+  width: 750px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#img_box {
+  width: 15%;
+  height: 55%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#img_box > img {
+  width: 50px;
+  height: 50px;
+}
+
+#txt_contents {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-direction: column;
+}
+#txt_contents > p {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222020;
+  line-height: 1.6rem;
+  padding-left: 10px;
+}
+
+#eventSlide {
+  width: 800px;
+  height: 1600px;
+}
+
+.leftArrowBtn {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-indent: -99999999px;
+}
+
+.leftArrowBtn::before {
+  font-weight: 900;
+  text-indent: 0;
+  color: #e06d50;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 3rem;
+}
+
+.rightArrowBtn {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-indent: -99999999px;
+}
+
+.rightArrowBtn::before {
+  font-weight: 900;
+  text-indent: 0;
+  color: #e06d50;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 3rem;
+}
+
+@media (max-width: 991px) {
+  #eventSlide {
+    width: 100vw;
+    height: auto;
+  }
+  .leftArrowBtn {
+    width: 30px;
+    height: 30px;
+  }
+  .leftArrowBtn::before {
+    font-size: 2rem;
+  }
+  .rightArrowBtn {
+    width: 30px;
+    height: 30px;
+  }
+  .rightArrowBtn::before {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

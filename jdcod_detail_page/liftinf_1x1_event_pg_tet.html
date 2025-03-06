@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   	 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="https://kit.fontawesome.com/12e1deed84.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="txt_box">
+    <div id="img_box">
+      <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/54728e01e7d42.png" >
+    </div>
+    <div id="txt_contents">
+      <p><strong>행사 기간 : </strong> 2025년 3월 12일 ~ 2025년 3월 25일<br>
+        &nbsp;(* 조기 소진 시 종료됩니다.)</p>
+
+      <p><strong>행사 대상 : </strong>이벤트 기간 내 회원가입 후 '쥬디메르 더미셔틀 리프팅 키트 1x1' 구매 고객 한정
+        <br>&nbsp;- 적립금 페이백은 회원 전용 혜택입니다. 비회원의 경우 회원가입 후 이용 바랍니다.
+        <br>&nbsp;
+        <span style="color: blue;"> <a href="https://www.jdcos.co.kr/login?back_url=Lz9OYVBtPWN0JTNEbHlwZ2psaGMlN0NjaSUzRDB6TzAwMDJLbVRyQUp6bDkxTDE4JTdDdHIlM0Ricm5kJTdDaGslM0QwNDg1YWQ3NmJiZDRhMThhZThmNjIyMzNiOTA5ZDAyNTE5MDIxNjA4JTdDbmFjbiUzRDVEcU9CTWczZXhBV0E%3D&used_login_btn=Y"> [회원가입 바로가기] </a></span>
+      </p>
+
+      <p><strong>행사 경품 : </strong>
+        <br>&nbsp;- 구매 후 만족 시 100% 적립금이 지급됩니다. 이벤트 상품 구매금액 100%가 적립금으로 페이백 됩니다. (적립금은 더미셔틀 리프팅 키트로 구성된 상품 한정으로 사용 가능합니다.)
+        <br>&nbsp;- 적립금 사용 기간은 발급일로부터 30일 이내입니다.
+        <br>&nbsp;- 구매 후 불만족 시 100% 환불 됩니다. <br>&nbsp;<span style="background-color: khaki; color: crimson;">(* 단, 7일 이내 환불 요청이 없을 시 적립금이 지급됩니다.)</span>
+        <br>&nbsp;- 적립금은 쿠폰 형태로 발급되며 개별 회원의 쿠폰함에 39,000원 할인 형태로 노출됩니다.
+        <br>&nbsp;- 회원 가입 축하금 및 카카오톡 전체 동의 쿠폰은 본 이벤트 상품에는 적용되지 않습니다. <br>&nbsp;단, 쥬디메르의 다른 상품에는 즉시 사용 가능합니다.
+      </p>
+
+      <p><strong>적립일 : </strong> 구매일로부터 7일이 경과한 익일(다음 날) 자동 지급 (7일 후 다음 날이 주말 또는 공휴일인 경우, 그다음 영업일에 지급)
+      <span style="color: dimgray;">
+        <br>&nbsp;&nbsp;예시)
+        <br>&nbsp;&nbsp;&nbsp; <strong>✔</strong> 3월15일(토) 구매 → 3월 21일(금)경과  : 3월 24일(월) 지급
+        <br>&nbsp;&nbsp;&nbsp; <strong>✔</strong>  3월16일(일) 구매 → 3월 22일(토)경과 : 3월 24일(월) 지급
+      </span>
+      </p>
+
+    </div>
+  </div>
+  <!-- <div id="slideContainerEvent">
+    <div id="eventSlide">
+      <i class="fa-solid fa-chevron-left leftArrowBtn"></i>
+      <img class="slideImg" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/091ef60e34d6b.gif" alt="">
+      <img class="slideImg" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/70ff4d8bd3c33.jpg" alt="">
+      <img class="slideImg" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/b2f69d9049213.jpg" alt="">
+      <i class="fa-solid fa-chevron-right rightArrowBtn"></i>
+    </div>
+  </div> 
+
+  <script>
+    $(function(){
+    $('#eventSlide').slick({
+      slide: '.slideImg',        //슬라이드될 태그
+      infinite : true,     //무한 반복 옵션     
+      slidesToShow : 1,        // 한 화면에 보여질 컨텐츠 개수
+      slidesToScroll : 1,        //스크롤 한번에 움직일 컨텐츠 개수
+      speed : 500,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+      arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+      dots : false,         // 스크롤바 아래 점으로 페이지네이션 여부
+      autoplay : true,            // 자동 스크롤 사용 여부
+      autoplaySpeed : 2000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+      pauseOnHover : true,        // 슬라이드 이동   시 마우스 호버하면 슬라이더 정지
+      vertical : false,        // 세로 방향 슬라이드 옵션
+      prevArrow : ".leftArrowBtn",
+      nextArrow : ".rightArrowBtn",
+      draggable : true,     //드래그 가능 여부 
+      responsive: [ // 반응형 웹 구현
+        {  
+          breakpoint: 991, //화면 사이즈
+          settings: {
+            slidesToShow: 1
+          },
+          autoplay : true,           
+          autoplaySpeed : 2500,  
+        }
+      ]
+
+    });
+})
+  </script> -->
+
+
+</body>
+</html>

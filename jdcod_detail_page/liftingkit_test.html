@@ -1,119 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    /* PC TOP 버튼 */
-    #scrollTopPc {
-        display: none;
-        position: fixed;
-        bottom: 80px; /* 브라우저 아래쪽 끝에서부터의 거리 */
-        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
-        cursor: pointer;
-        z-index: 99;
-    }
-    /* 모바일 TOP 버튼 */
-    #scrollTopMob {
-        display: none;
-        position: fixed;
-        bottom: 64px; /* 브라우저 아래쪽 끝에서부터의 거리 */
-        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
-        z-index: 99;
-    }  
-    /* PC DOWN 버튼 */
-    #scrollDownPc {
-        display: none;
-        position: fixed;
-        bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
-        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
-        cursor: pointer;
-        z-index: 99;
-    }
-    
-    /* 모바일 DOWN 버튼 */
-    #scrollDownMob {
-        display: none;
-        position: fixed;
-        bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
-        right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
-        z-index: 99;
-    }  
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
     
 </head>
 <body>
- 
-    <!-- PC TOP 버튼 HTML -->
-    <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
-        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/da849030d6262.png" width="40px" height="40px">
-    </div> 
-    <!-- 모바일 TOP 버튼 HTML -->
-    <div onclick="topFunctionMob()" id="scrollTopMob" class="hidden-lg">
-        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/da849030d6262.png" width="20px" height="20px">
-    </div>
-    <!-- PC DOWN 버튼 HTML -->
-    <div onclick="downFunction()" id="scrollDownPc" class="hidden-md hidden-sm hidden-xs">
-        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/ed66289d71e31.png" width="40px" height="40px">
-    </div> 
-    <!-- 모바일 DOWN 버튼 HTML -->
-    <div onclick="downFunctionMob()" id="scrollDownMob" class="hidden-lg">
-        <img src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/ed66289d71e31.png" width="20px" height="20px">
-    </div>
-    
-    <!-- 상단/하단 이동 스크롤 스크립트 -->
-    <script>
-    window.onscroll = function() { scrollFunction() };
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.getElementById("scrollTopPc").style.display = "block";
-            document.getElementById("scrollTopMob").style.display = "block";
-            document.getElementById("scrollDownPc").style.display = "block";
-            document.getElementById("scrollDownMob").style.display = "block";
-        } else {
-            document.getElementById("scrollTopPc").style.display = "none";
-            document.getElementById("scrollTopMob").style.display = "none";
-            document.getElementById("scrollDownPc").style.display = "none";
-            document.getElementById("scrollDownMob").style.display = "none";
-        }
-    }
-    
-    // PC TOP 버튼 동작
-    function topFunction() {
-        $('html,body').animate({ scrollTop: 0 }, 500);
-    }
-    // 모바일 TOP 버튼 동작
-    function topFunctionMob() {
-        $('html,body').animate({ scrollTop: 0 }, 500);
-    }
-    // PC DOWN 버튼 동작
-    function downFunction() {
-        $('html, body').animate({ scrollTop: $('#doz_footer').offset().top }, 500);
-    }
-    // 모바일 DOWN 버튼 동작
-    function downFunctionMob() {
-        $('html, body').animate({ scrollTop: $('#doz_footer').offset().top }, 500);
-    }
-    </script>
+
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <img style="margin-top: 0; margin-bottom: 0; max-width: 1000px;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/fdec2d3aa7212.gif" class="fr-dib"> <br><br><br><br>
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c15b630f7a594.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/a808cb01a4b99.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/f87d3b236cbb9.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/549c799aa6051.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0; max-width: 1000px;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/879fed80462be.gif" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/f4430a723eb26.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/5842990685f61.gif" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c0c559ab95a73.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/91867ea200e02.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/e9e9197b90d4f.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/18b0570e90391.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/51c35947d2d48.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/c90bee185dbd6.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/aec280f40d3fe.jpg" class="fr-dib"> 
-    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/2351c1fdd67b8.jpg" class="fr-dib"> 
+
+    <br>
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/1daeed88edb01.jpg" class="fr-dib"> <br>
+    <br>
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/638bb416f1091.jpg" class="fr-dib"> <br>
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/97e709caa3bcf.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/b24fd8e2073e2.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/ed8b95d0aa622.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/a21efd6fb4627.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/904fe3919396c.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/d75d4e7ab2c26.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/e647620612a99.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/a6a679c5e32d2.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/cea023183ca90.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/b275e6d9dc835.jpg" class="fr-dib">
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/1a1e8761fda30.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/dfee210a0ee8c.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/224001f8203db.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/4e506c3e6d303.gif" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/5db9b02046f3e.jpg" class="fr-dib"> 
+    <img style="margin-top: 0; margin-bottom: 0;" src="https://cdn.imweb.me/upload/S20240621aab09c1d24af5/e67ca331aeb26.jpg" class="fr-dib"> 
+    <br>
+    <br>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-width: 1px 1px 0px 0px; margin: 0px auto; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-top-style: solid; border-right-style: solid; text-align: left;">
+      <tbody>
+        <tr>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 15px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;상품정보제공고시</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 5px; border-top-color: rgb(255, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(255, 255, 255); border-top-style: solid; border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 10px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[제품명]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 5px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255); text-align: left;'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;쥬디메르 더미셔틀 리프팅 키트</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 233px; height: 5px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[용량 및 중량]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 5px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;동결건조 농축파우더(1제) 154mg *4 / 부스팅 앰플(2제) 15ml *4</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 20px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[제품 주요 사양]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;모든 피부</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[사용기한]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;제조일로부터 36개월</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[화장품책임판매업자/화장품제조업자]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;㈜셀아이콘랩 / ㈜셀아이콘랩</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[제조국]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;대한민국</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[전성분]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px 10px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.5; font-size: 9pt;">동결건조농축파우더(1제) ㅣ 소듐하이알루로네이트, 하이드롤라이즈드콜라겐, 올리고펩타이드-191, 헥사펩타이드-61 다이머, 헥사펩타이드-86</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.5; font-size: 9pt;">부스팅앰플(2제) ㅣ 정제수, 다이프로필렌글라이콜, 나이아신아마이드, 부틸렌글라이콜, 변성알코올, 1,2-헥산다이올, 하이드록시아세토페논, 글리세린, 옥틸도데세스-16, 하이드록시에틸우레아, 다이에톡시에틸석시 네이트, 다이소듐이디티에이, 아데노신, 향료, 옥틸도데칸올, 글리세릴아크릴레이트/아크릴릭애씨드코폴리머, 하이드로제네이티드레시틴, 세라마이드엔피, 카프릴릴글라이콜</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.5; font-size: 9pt;">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.8;">&nbsp;[기능성 화장품의 경우 화장품법에 따른
+              <br>&nbsp;식품의약품안전처 심사 또는 보고 유무]</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">
+              <br>
+            </p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;-</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[사용 중 주의사항]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;2. 상처가 있는 부위 등에는 사용을 자제할 것</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;3. 보관 및 취급 시의 주의사항</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;1) 어린이의 손이 닿지 않는 곳에 보관할 것</p>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;2) 직사광선을 피해서 보관할 것</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[품질보증기준]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;본 제품에 이상이 있을 경우 공정거래위원회 고시 &#39;소비자 분쟁 해결 기준&#39;에 의해 보상해드립니다.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" rowspan="1" style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 250px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(235, 235, 235);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;[소비자상담]</p>
+          </td>
+          <td style='margin: 0px; padding: 5px; font-size: 12px; line-height: 1.5; font-family: "Malgun Gothic", "맑은 고딕", AppleGothic, Dotum, 돋움, sans-serif; color: rgb(51, 51, 51); border-width: 0px 0px 1px 1px; width: 750px; height: 18px; border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-style: solid; border-left-style: solid; background-color: rgb(255, 255, 255);'>
+    
+            <p style="margin: 0px; padding: 0px; line-height: 1.2;">&nbsp;1566 - 6981</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
   </div>
+
+
 </body>
 </html>

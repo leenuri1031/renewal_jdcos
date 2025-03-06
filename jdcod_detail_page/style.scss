@@ -1,0 +1,184 @@
+@import url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
+
+@mixin posi($posi, $top:0, $left:0, $zindx:100) {
+  position: $posi;
+  top: $top;
+  left: $left;
+  z-index: $zindx;
+}
+
+@mixin flex($jus, $ali, $flexdirection : row) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-direction: $flexdirection;
+}
+
+@mixin root {
+  width: var.$width-root;
+  height: var.$height-root;
+}  
+
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin box-style($w, $h, $col, $radius : 0) {
+  width: $w;
+  height: $h;
+  background-color: $col;
+  border-radius: $radius;
+}
+
+
+@mixin font($rem, $weight, $col) {
+  font-size: $rem ;
+  font-weight: $weight;
+  color: $col;
+}
+
+@mixin menu-style($col, $opacity, $mode:horizontal-tb, $orientation:unset) {
+  padding-top: 2vh;
+  writing-mode: $mode;
+  text-orientation: $orientation;
+  position: fixed;
+  background-color: $col;
+  opacity: $opacity;
+  border-radius: 30px 0 0 30px;
+}
+
+@mixin container-style($w, $h, $jus, $ali, $flexdirection : row) {
+  width: $w;
+  height: $h;
+  display: flex;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-direction: $flexdirection;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// ---------------------------------------------------------------------------
+
+body {
+  @include container-style(100vw, auto , center,center );
+}
+
+#txt_box{
+  @include container-style(750px, 800px , center,center );
+}
+
+#img_box{
+  @include container-style(15%, 55% , flex-end,flex-start );
+  &>img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#txt_contents{
+  @include container-style(84%, 100% , center,space-evenly,column );
+  // border: #222020 solid 2px;
+  &>p{
+    @include size(100%, auto);
+    @include font(16px, 400,#222020 );
+    line-height: 1.6rem;
+    padding-left: 10px;
+  }
+}
+
+#eventSlide{
+  width: 800px;
+  height: 1600px;
+}
+
+// .slick-prev, .slick-next{
+//   border: none;
+//   background-color: transparent;
+// }
+
+.leftArrowBtn{
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-indent: -99999999px;
+}
+
+.leftArrowBtn::before{
+  font-weight: 900;
+  text-indent: 0;
+  color: #e06d50;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 3rem;
+}
+
+.rightArrowBtn{
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-indent: -99999999px;
+}
+
+.rightArrowBtn::before{
+  font-weight: 900;
+  text-indent: 0;
+  color: #e06d50;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 3rem;
+}
+
+
+@media (max-width: 991px) {
+  #eventSlide{
+    width: 100vw;
+    height: auto;
+  }
+
+  .leftArrowBtn{
+    width: 30px;
+    height: 30px;
+  }
+
+  .leftArrowBtn::before{
+    font-size: 2rem;
+  }
+  
+  .rightArrowBtn{
+    width: 30px;
+    height: 30px;
+  }
+  
+
+  .rightArrowBtn::before{
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
